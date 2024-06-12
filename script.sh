@@ -8,6 +8,8 @@ sudo sed -i '/ swap / s/^/#/' /etc/fstab
 
 sudo apt install docker.io -y
 
+sudo service docker restart
+
 sudo chmod 666 /var/run/docker.sock
 
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
